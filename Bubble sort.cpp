@@ -5,13 +5,14 @@ int main()
 {
 	const int m = 10;
 	int j, s, i;
-	int arr[m] = { 5, 19,27,3,8,1, 4, 1, 4, 11 };
+	int arr[m];
 	cout << "Before:\n";
-	for (i = 0; i < m; i++)
+	for (i=0; i<m; i++)
 	{
+		arr[i] = rand() % 20;
 		cout << arr[i] << " ";
 	}
-
+	
 	for (j = 1; j <= (m - 1); j++)
 	{
 		for (i=0; i < m-j; i++)
