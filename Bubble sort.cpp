@@ -1,37 +1,43 @@
 #include <iostream>
 using namespace std;
-
+void srt();
 int main()
 {
-	const int m = 10;
+    srt();
+	srt();
+	srt();
+	return 0;
+
+}
+void srt()
+{const int m = 10;
 	int j, s, i;
 	int arr[m];
-	cout << "Before:\n";
-	for (i=0; i<m; i++)
+	std::cout << "Before:\n";
+	for (i = 0; i < m; i++)
 	{
 		arr[i] = rand() % 20;
-		cout << arr[i] << " ";
+		std::cout << arr[i] << " ";
 	}
-	
+
 	for (j = 1; j <= (m - 1); j++)
 	{
-		for (i=0; i < m-j; i++)
-		{if (arr[i]>arr[i+1])
+		for (i = 0; i < m - j; i++)
 		{
-			s = arr[i + 1];
-			arr[i + 1] = arr[i];
-			arr[i] = s;
-		}
+			if (arr[i] > arr[i + 1])
+			{
+				s = arr[i + 1];
+				arr[i + 1] = arr[i];
+				arr[i] = s;
+			}
 		}
 	}
-	cout << "\nThe smallest number:\n";
+	std::cout << "\nThe smallest number:\n";
 	//for (i = 0; i < m; i++)
 	//{
-		cout << arr[0] << " ";
+		std::cout << arr[0] << " \n";
 	//}
-	cout << "\n";
-	return 0;
-   
 }
+
 
 
