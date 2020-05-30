@@ -16,7 +16,7 @@ int main()
 	for (j = 1; j <= (m - 1); j++)
 	{
 		for (i=0; i < m-j; i++)
-		{if (arr[i]>arr[i+1])
+		{if (arr[i]<arr[i+1])
 		{
 			s = arr[i + 1];
 			arr[i + 1] = arr[i];
