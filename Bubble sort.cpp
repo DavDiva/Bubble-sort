@@ -24,10 +24,10 @@ int main()
 		}
 		}
 	}
-	cout << "\nThe biggest number:\n";
+	cout << "\nThe smallest number:\n";
 	//for (i = 0; i < m; i++)
 	//{
-		cout << arr[9] << " ";
+		cout << arr[0] << " ";
 	//}
 	cout << "\n";
 	return 0;
